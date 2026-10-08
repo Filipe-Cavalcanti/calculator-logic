@@ -4,4 +4,4 @@
 
 - Develop organizational skills;
 
-- Do some math, by the way.
+- Do some math, by the way (Addition, Subtraction, Multiplication, Divison).

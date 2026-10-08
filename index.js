@@ -6,19 +6,18 @@ const reader = createInterface({
     output: process.stdout
 });
 
-console.log("Welcome to the Basic Calculator!");
+console.log("Welcome to the very Basic Calculator!");
 
 reader.question("Input the first number\n>", (number1) => {
     reader.question("Input the operator (choose one of the following:\n + for sum\n - for subtraction\n / for divison\n * for multiplication)\n>", (operator) => {
         reader.question("Input the second number:\n>", (number2) => {
+            if ( typeof(number1) != Number || typeof(number2) != Number ) {
+                console.log("Error: please insert valid numbers")                
+                return reader.close();
+            } 
 
             const num1 = Number(number1);
             const num2 = Number(number2);
-
-            if (num1 || num2 === null) {
-                console.log("Please insert a valid number");
-                return reader.close()
-            }
 
             let result = null;
 
@@ -34,11 +33,6 @@ reader.question("Input the first number\n>", (number1) => {
                 console.log("Error: Please insert one of the following valid operators: + for sum, - for substraction, / for division or * for multiplication")
                 return reader.close();
             }
-            if (typeof(result) != Number) {
-                console.log("Error: Please insert valid numbers");
-                return reader.close();
-            }
-
             console.log(`The result is ${result}`);
             reader.close();
         })
