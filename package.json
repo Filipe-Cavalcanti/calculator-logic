@@ -1,0 +1,24 @@
+{
+  "name": "projeto---calculadora",
+  "version": "1.0.0",
+  "description": "basic calculator project",
+  "keywords": [
+    "study",
+    "math"
+  ],
+  "homepage": "https://github.com/Filipe-Cavalcanti/calculator-logic#readme",
+  "bugs": {
+    "url": "https://github.com/Filipe-Cavalcanti/calculator-logic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filipe-Cavalcanti/calculator-logic.git"
+  },
+  "license": "ISC",
+  "author": "Luis Filipe C. Santos",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
